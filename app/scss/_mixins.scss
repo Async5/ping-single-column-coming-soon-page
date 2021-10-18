@@ -1,0 +1,13 @@
+$width: 41rem;
+
+@mixin breakpoint-down {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin breakpoint-up {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}

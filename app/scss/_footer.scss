@@ -1,0 +1,45 @@
+.footer {
+  .social {
+    width: 7.4375rem;
+    height: 1.9375rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5625rem;
+
+    @include breakpoint-down {
+      margin-bottom: 1.6875rem;
+    }
+
+    &__icon {
+      width: 1.9375rem;
+      height: 1.9375rem;
+      border: 1px solid $pale-blue;
+      border-radius: 50%;
+      color: $pale-blue;
+      position: relative;
+      cursor: pointer;
+      transition: all 200ms ease-in-out;
+
+      &:hover {
+        color: white;
+        background-color: $blue;
+      }
+
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  h4 {
+    margin-bottom: 3rem;
+
+    @include breakpoint-down {
+      margin-bottom: 2.3125rem;
+    }
+  }
+}
